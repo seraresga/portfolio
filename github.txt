@@ -1,0 +1,4 @@
+git status                        # Check for changes
+git add .                          # Add all modified files
+git commit -m "Updated home.html"  # Commit changes with a message
+git push origin main               # Push changes to GitHub
