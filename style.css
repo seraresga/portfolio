@@ -1,379 +1,177 @@
-/* for tablet */
-@media(max-width: 426px){
-
-    html, body{
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,0,42,1) 48%, rgba(0,0,0,1) 100%);
-        color: aliceblue;
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-    }
-    
-    /* header */
-    header{
-        width: 100%;
-    }
-    .header-container{
-        display: grid;
-        width: 100%;
-        height: 65px;
-        grid-template-columns: 50% 50%;
-    }
-    .logo{
-        display: grid;
-        width: 100%;
-        padding-left: 25px;
-        justify-content: start;
-    }
-    .text-photo{
-        height: 25px;
-        place-self: center;
-    }
-/* for drop button */
-    .drop-button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    .nav-buttons {
-        position: relative;
-        display: inline-block;
-    }
-    ul{
-        display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    }
-
-
-
-    .nav-buttons{
-        display: grid;
-        justify-items: center;
-    }
-    li{
-        display: inline;
-    }
-    li a{
-        float: left;
-        text-decoration: none;
-        color: aliceblue;
-        padding: 10px;
-        font-size: 14px;
-    }
-    
-    /* for the main content */
-    .container{
-        display: grid;
-        margin-top: 70px;
-    }
-    .desc{
-        display: grid;
-    }
-    .desc-container{
-        justify-items: center;
-        align-self: center;
-        padding: 0 5%;
-    }
-    h5{
-        font-size: 12px;
-        margin: 0;
-        font-weight: 100;
-    
-    }
-    h1{
-        font-size: 60px;
-        margin: 0;
-        font-weight: 600;
-        text-shadow: 2px 2px  rgb(255, 0, 93);
-    }
-    p{
-        text-align: center;
-        font-size: 15px;
-        line-height: 1.6;
-        color: #7b7e90;
-        margin: 2% 0;
-    }
-    .buttons{
-        margin-top: 30px;
-        display: grid;
-        width: 100%;
-        height: 100px;
-    }
-    .contact-container{
-        display: grid;
-    }
-    .contact{
-        height: 100%;
-        width: 150px;
-        background-color: rgb(55, 3, 25);
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-        
-    }
-    .project-container{
-        display: grid;
-        margin-top: 15px;
-    }
-    .project{
-        height: 100%;
-        width: 150px;
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        border: #7b7e90 solid 0.5px;
-        font-size: 14px;
-    }
-    
-    .main{
-        display: grid;
-        margin-top: 50px;
-    }
-    .main-container{
-        align-self: center;
-        display: grid;
-        justify-items: center;
-    }
-    .img-container{
-        display: grid;
-    }
-    .animated-photo{
-        height: 270px;
-        border-radius: 25px;
-    }
-    .animated-photo:hover{
-        box-shadow: 0 0 15px 0 rgb(255, 0, 93);
-        
-    }
-    .social-media{
-        height: 60px;
-        width: 60%;
-        margin-top: 15px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        place-self: center;
-    }
-    .fa {
-        text-decoration: none;
-        display: grid;
-        font-size: 50px;
-    }
-    .fa:hover {
-        opacity: 0.7;
-        color: white;
-    }
-    .fa-facebook {
-        color: rgb(10, 76, 183);
-        place-self: center; 
-    }
-    .fa-twitter {
-        color: rgb(30, 151, 199);
-        place-self: center; 
-    }
-    .fa-instagram{
-        color: rgb(194, 0, 142);
-        place-self: center; 
-    }
-    .fa-github{
-        color: white;
-        place-self: center; 
-    }
-
+html, body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,0,42,1) 48%, rgba(0,0,0,1) 100%);
+    color: aliceblue;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* for the header */
+.header-container{
+    display: none;
+}
+.nav-bar #text-logo{
+    height: 20px;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+.nav-bar {
+    overflow: hidden;
+    position: relative;
+    margin: 10px 10px;
+}
+.nav-bar #myLinks {
+    display: none;
+}
+.nav-bar a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    border-bottom: 0.2px solid rgb(42, 40, 63);
+}
+.nav-bar a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 12px;
+    border-radius: 12px;
+    border-bottom: black;
+}
 
+.nav-bar a:hover {
+    background-color: #595959;
+}
 
-/* for tablet */
-@media(min-width: 426px) and (max-width: 768px){
-    
-    html, body{
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,0,42,1) 48%, rgba(0,0,0,1) 100%);
-        color: aliceblue;
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-    }
-    
-    /* header */
-    header{
-        width: 100%;
-    }
-    .header-container{
-        display: grid;
-        width: 100%;
-        height: 65px;
-        grid-template-columns: 50% 50%;
-    }
-    .logo{
-        display: grid;
-        width: 100%;
-        padding-left: 25px;
-        justify-content: start;
-    }
-    .text-photo{
-        height: 25px;
-        place-self: center;
-    }
-    .drop-button{
-        display: none;
-    }
-    .nav-buttons{
-        display: grid;
-        justify-items: center;
-    }
-    ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    li{
-        display: inline;
-    }
-    li a{
-        float: left;
-        text-decoration: none;
-        color: aliceblue;
-        padding: 10px;
-        font-size: 14px;
-    }
-    
-    /* for the main content */
-    .container{
-        display: grid;
-        margin-top: 70px;
-    }
-    .desc{
-        display: grid;
-    }
-    .desc-container{
-        justify-items: center;
-        align-self: center;
-        padding: 0 5%;
-    }
-    h5{
-        font-size: 12px;
-        margin: 0;
-        font-weight: 100;
-    
-    }
-    h1{
-        font-size: 60px;
-        margin: 0;
-        font-weight: 600;
-        text-shadow: 2px 2px  rgb(255, 0, 93);
-    }
-    p{
-        text-align: center;
-        font-size: 15px;
-        line-height: 1.6;
-        color: #7b7e90;
-        margin: 2% 0;
-    }
-    .buttons{
-        margin-top: 30px;
-        display: grid;
-        width: 100%;
-        height: 100px;
-    }
-    .contact-container{
-        display: grid;
-    }
-    .contact{
-        height: 100%;
-        width: 150px;
-        background-color: rgb(55, 3, 25);
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-        
-    }
-    .project-container{
-        display: grid;
-        margin-top: 15px;
-    }
-    .project{
-        height: 100%;
-        width: 150px;
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        border: #7b7e90 solid 0.5px;
-        font-size: 14px;
-    }
-    
-    .main{
-        display: grid;
-        margin-top: 50px;
-    }
-    .main-container{
-        align-self: center;
-        display: grid;
-        justify-items: center;
-    }
-    .img-container{
-        display: grid;
-    }
-    .animated-photo{
-        height: 270px;
-        border-radius: 25px;
-    }
-    .animated-photo:hover{
-        box-shadow: 0 0 15px 0 rgb(255, 0, 93);
-        
-    }
-    .social-media{
-        height: 60px;
-        width: 60%;
-        margin-top: 15px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        place-self: center;
-    }
-    .fa {
-        text-decoration: none;
-        display: grid;
-        font-size: 50px;
-    }
-    .fa:hover {
-        opacity: 0.7;
-        color: white;
-    }
-    .fa-facebook {
-        color: rgb(10, 76, 183);
-        place-self: center; 
-    }
-    .fa-twitter {
-        color: rgb(30, 151, 199);
-        place-self: center; 
-    }
-    .fa-instagram{
-        color: rgb(194, 0, 142);
-        place-self: center; 
-    }
-    .fa-github{
-        color: white;
-        place-self: center; 
-    }
+/* for the main content */
+.container{
+    display: grid;
+    margin-top: 70px;
+}
+.desc{
+    display: grid;
+}
+.desc-container{
+    justify-items: center;
+    align-self: center;
+    padding: 0 5%;
+}
+h5{
+    font-size: 12px;
+    margin: 0;
+    font-weight: 100;
 
+}
+h1{
+    font-size: 60px;
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 2px 2px  rgb(255, 0, 93);
+}
+h3{
+    margin-top: 0;
+    font-size: 15px;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #7b7e90;
+    margin: 6px 0;
+}
+.buttons{
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    height: 100px;
+}
+.contact-container{
+    display: grid;
+}
+.contact{
+    height: 100%;
+    width: 150px;
+    background-color: rgb(55, 3, 25);
+    place-self: center;
+    place-content: center;
+    text-align: center;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    
+}
+.project-container{
+    display: grid;
+    margin-top: 15px;
+}
+.project{
+    height: 100%;
+    width: 150px;
+    place-self: center;
+    place-content: center;
+    text-align: center;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+    border: #7b7e90 solid 0.5px;
+    font-size: 14px;
+}
+
+.main{
+    display: grid;
+    margin-top: 50px;
+}
+.main-container{
+    align-self: center;
+    display: grid;
+    justify-items: center;
+}
+.img-container{
+    display: grid;
+}
+.animated-photo{
+    height: 270px;
+    border-radius: 25px;
+}
+.animated-photo:hover{
+    box-shadow: 0 0 15px 0 rgb(255, 0, 93);
+    
+}
+.social-media{
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-self: center;
+}
+.fa {
+    text-decoration: none;
+    display: grid;
+    font-size: 50px;
+}
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+.fa-facebook {
+    color: rgb(10, 76, 183);
+    place-self: center; 
+}
+.fa-twitter {
+    color: rgb(30, 151, 199);
+    place-self: center; 
+}
+.fa-instagram{
+    color: rgb(194, 0, 142);
+    place-self: center; 
+}
+.fa-github{
+    color: white;
+    place-self: center; 
 }
 
 
@@ -381,25 +179,17 @@
 @media only screen and (min-width: 769px) {
 
     html, body{
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,0,42,1) 48%, rgba(0,0,0,1) 100%);
-        height: 100%;
-        width: 100%;
-        color: aliceblue;
-    
-        /* prevent page from scrolling */
         overflow-x: hidden;
-        overflow-y: auto;
-    
-        margin: 0;
-        position: relative;
-        font-family: "Montserrat", sans-serif;
-    }
-    
-    /* header */
-    
+    }   
+
+    /* for the header */
     header{
         position: absolute;
-        z-index: 2;
+    }
+    .nav-bar{
+        display: none;
+    }
+    header{
         width: 100%;
     }
     .header-container{
@@ -407,14 +197,16 @@
         width: 100%;
         height: 65px;
         grid-template-columns: 50% 50%;
-    }   
+    }
     .logo{
         display: grid;
         width: 100%;
-        padding: 7px;
+        padding-left: 25px;
+        justify-content: start;
     }
     .text-photo{
         height: 25px;
+        place-self: center;
     }
     .drop-button{
         display: none;
@@ -434,141 +226,66 @@
         float: left;
         text-decoration: none;
         color: aliceblue;
-        padding: 10px;
-        font-size: 18px;
+        padding: 18px;
+        font-size: 17px;
     }
 
     /* for the main content */
     .container{
-        display: grid;
+        height: 100vh;
         grid-template-columns: 50% 50%;
-        z-index: 1;
+        margin-top: 0;
     }
     
     .desc{
-        height: 100vh;
         width: 100%;
-        display: grid;
     }
     .desc-container{
-        justify-items: center;
-        align-self: center;
-        font-family: "Montserrat", sans-serif;
         padding: 0 15px;
     }
     h5{
         font-size: 20px;
-        margin: 0;
-        font-weight: 100;
-
     }
     h1{
         font-size: 80px;
-        margin: 0;
-        font-weight: 600;
-        text-shadow: 2px 2px  rgb(255, 0, 93);
+    }
+    h3{
+        font-size: 25px;
     }
     p{
-        text-align: center;
         font-size: 16px;
         font-weight: 300;
-        line-height: 1.6;
-        color: #7b7e90;
         margin: 20px 0;
     }
     .buttons{
-        display: grid;
         grid-template-columns: 50% 50%;
-        width: 100%;
         height: 50px;
     }
     .contact-container{
-        display: grid;
         justify-content: end;
     }
     .contact{
-        height: 100%;
-        width: 150px;
-        background-color: rgb(55, 3, 25);
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
         margin-right: 20px;
-        font-size: 14px;
-        
     }
     .project-container{
-        display: grid;
         justify-content: start;
+        margin-top: 0;
     }
     .project{
-        height: 100%;
-        width: 150px;
-        place-self: center;
-        place-content: center;
-        text-align: center;
-        border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        border: #7b7e90 solid 0.5px;
-        font-size: 14px;
         margin-left: 20px;
     }
-    
-    
+
     .main{
-        height: 100vh;
         width: 100%;
-        display: grid;
         border-left: 1px solid rgb(42, 40, 63);
-    }
-    .main-container{
-        align-self: center;
-        display: grid;
-        justify-items: center;
-    }
-    .img-container{
-        display: grid;
+        margin-top: 0;
     }
     .animated-photo{
         height: 380px;
-        border-radius: 25px;
     }
     .social-media{
-        height: 60px;
         width: 60%;
         margin-top: 15px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        place-self: center;
-    }
-    .fa {
-        text-decoration: none;
-        display: grid;
-        font-size: 50px;
-    }
-    .fa:hover {
-        opacity: 0.7;
-        color: white;
-    }
-    .fa-facebook {
-        color: rgb(10, 76, 183);
-        place-self: center; 
-    }
-    .fa-twitter {
-        color: rgb(30, 151, 199);
-        place-self: center; 
-    }
-    .fa-instagram{
-        color: rgb(194, 0, 142);
-        place-self: center; 
-    }
-    .fa-github{
-        color: white;
-        place-self: center; 
     }
 
 }
