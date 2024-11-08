@@ -141,7 +141,6 @@
     
     .main{
         display: grid;
-        border-left: 1px solid rgb(42, 40, 63);
         margin-top: 50px;
     }
     .main-container{
@@ -323,7 +322,6 @@
     
     .main{
         display: grid;
-        border-left: 1px solid rgb(42, 40, 63);
         margin-top: 50px;
     }
     .main-container{
