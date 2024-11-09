@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ser RJ</title>
-    <link rel="icon" href="resources/rj-text-logo.png">
+    <link rel="icon" href="/resources/rj-text-logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
 <body>
     <header>
         <div class="nav-bar">
-            <img src="resources/rj-text-logo.png" alt="this is RJ's text logo" id="text-logo">
+            <img src="/resources/rj-text-logo.png" alt="this is RJ's text logo" id="text-logo">
             <div id="myLinks">
-                <a href="#news">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="/home/home.html">Home</a>
+                <a href="#contact">Projects</a>
                 <a href="#about">About Me</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -27,12 +27,12 @@
         </div>
         <div class="header-container">
             <div class="logo">
-                <img src="resources/rj-text-logo.png" alt="This is a text logo" class="text-photo">
+                <img src="/resources/rj-text-logo.png" alt="This is a text logo" class="text-photo">
             </div>
             <div class="nav-buttons">
                 <ul>
+                    <li><a href="/home/home.html">Home</a></li>
                     <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
                     <li><a href="#">About Me</a></li>
                 </ul>
             </div>
@@ -40,40 +40,39 @@
     </header>
 
     <div class="container">
-        <section class="desc">
-            <div class="desc-container">
-                <h5>Hi there! I'm</h5>
-                <h1>SER RJ</h1>
-                <h3>I'm a Front-end Developer</h3>
-                <p>Hey there! I'm diving into web development, mastering HTML and CSS basics. Next stop: JavaScript for some function magic! My ultimate goal? To rock the mobile app world using ReactJS and AngularJS. Stick around for updates - this journey's just getting started!</p>
-                <div class="buttons">
-                    <div class="contact-container">
-                        <a href="#" class="contact">
-                            BUY ME A DRINK?
-                        </a>
-                    </div>
-                    <div class="project-container">
-                        <a href="#" class="project">
-                            RECENT PROJECTS
-                        </a>
-                    </div>
-                </div>
+        <section class="message">
+            <div class="message-container">
+                <h1>SEND A MESSAGE</h1>
+                <p>Do you have questions or suggestions?<br> Let me know.</p>
+                <form action="#">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="name@account.com"><br><br>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Any Ideas?"><br><br>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="What's on your mind?"></textarea><br><br>
+                    <button type="submit">
+                        SEND MESSAGE
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </section>
-        <section class="main">
-            <div class="main-container">
-                <div class="img-container">
-                    <img src="resources/rj-main-logo.jpg" alt="rj-animated-photo" class="animated-photo">
-                    <div class="social-media">
+        <section class="social-media">
+            <div class="contacts">
+                    <h3>CONTACT</h3>
+                    <h2><a href="#">jamesaresga57@gmail.com</a></h2>
+                    <p>Want to connect more? I'm happy to help.</p>
+                    <div class="accounts">
                         <a href="https://www.facebook.com/rolly.aresga" class="fa fa-facebook" style="font-size:40px;"></a>
                         <a href="https://x.com/rollyaresga?t=Y70OvQzmTAMGhLLtd59veQ&s=09" class="fa fa-twitter" style="font-size:40px;"></a>
                         <a href="https://www.instagram.com/invites/contact/?igsh=mslcf8b3oztd&utm_content=nn8inqn" class="fa fa-instagram" style="font-size:40px;"></a>
                         <a href="https://github.com/seraresga/" class="fa fa-github" style="font-size:40px;"></a>
                     </div>
-                </div>
             </div>
         </section>
     </div>
+
 </body>
 
 </html>
